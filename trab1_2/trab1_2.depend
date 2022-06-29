@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1654719518 source:c:\users\yuri\documents\trab1_2\int_ord.c
+	<stdio.h>
+	"int_ord.h"
+
+1654719518 c:\users\yuri\documents\trab1_2\int_ord.h
+
+1654719529 source:c:\users\yuri\documents\trab1_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"int_ord.h"
+

@@ -1,0 +1,62 @@
+CriaLista
+pré-condição: nenhuma
+entrada: nenhum
+processo: seta a lista como vazia
+saída: nenhuma
+pós-condição: lista criada e vazia
+
+ListaVazia
+pré-condição: nenhuma
+entrada: endereço da lista
+processo: checa se há elementos na lista
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
+
+InsereOrdenado
+pré-condição: endereço da lista ser válido e elemento ser alocado com sucesso
+entrada: endereço da lista, elemento a ser inserido
+processo: insere o elemento na lista de forma ordenada
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista com um elemento a mais
+
+TamanhoLista
+pré-condição: endereço da lista ser válido
+entrada: endereço da lista
+processo: computa o numero de elementos da lista
+saída: o numero de elementos da lista
+pós-condição: nenhuma
+
+Média
+pré-condição: nenhuma
+entrada: endereço da lista
+processo: calcula a média dos elementos da lista
+saída: a média calculada
+pós-condição: nenhuma
+
+Iguais
+pré-condição: duas listas válidas
+entrada: dois endereços de lista
+processo: compara as listas elemento a elemento
+saída: 1 - iguais, 0 - diferentes
+pós-condição: nenhuma
+
+Intercalar
+pré-condição: duas listas válidas
+entrada: tres endereços de lista
+processo: intercala de forma ordenada as duas listas passadas como parametro dentro da 3a
+saída: 1 - sucesso, 0 - falha
+pós-condição: 3a lista criada com os elementos intercalados
+
+Inverter
+pré-condição: lista válida
+entrada: uma lista a ser invertida e outra vazia para ser preenchida com os invertidos
+processo: insere os elementos de uma lista em outra que esteja vazia
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista criada com os elementos da outra na ordem inversa
+ 
+RetornaImpar
+pré-condição: lista valida
+entrada: endereço da lista a ser verificada e da vazia
+processo: verifica elemento a elemento se é impar ou não. Caso seja, insere na lista vazia
+saída: nenhuma
+pós-condição: nova lista criada com os ímpares da anterior
