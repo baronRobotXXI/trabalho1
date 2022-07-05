@@ -150,7 +150,7 @@ int ObtemValorElemento (Lista* lst, int pos, int* elem){
 }
 
 int Tamanho (Lista* lst, int* tam){
-    if (lst == NULL || (ListaVazia(lst)))
+    if (lst == NULL)
         return 0;
 
     else{
