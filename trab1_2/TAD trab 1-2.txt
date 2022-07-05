@@ -1,0 +1,83 @@
+CriaLista
+pré-condição: nenhuma
+entrada: nenhum
+processo: aloca espaço para a lista e a inicializa como vazia
+saída: nenhuma
+pós-condição: lista criada e vazia
+
+ListaVazia
+pré-condição: nenhuma
+entrada: endereço da lista
+processo: checa se há elementos na lista
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
+
+ListaCheia
+pré-condição: nenhuma
+entrada: endereço da lista
+processo: checa se ainda se pode inserir elementos na lista
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
+
+InsereOrdenado
+pré-condição: endereço da lista ser válido e caber elementos na lista
+entrada: endereço da lista, elemento a ser inserido
+processo: insere o elemento de forma ordenada
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista com um elemento a mais
+
+RemoveOrdenado
+pré-condição: lista ser válida, não estar vazia, o elemento não ser menor que o primeiro ou não ser maior que o último
+entrada: endereço da lista, elemento a ser removido
+processo: procura e remove o elemento desejado (caso exista), deslocando para "tampar o buraco"
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista com um elemento a menos
+
+RemoveImpares
+pré-condição: a lista não estar vazia e ser válida
+entrada: endereço da lista
+processo: checa elemento a elemento se é ímpar ou par, e o remove caso seja ímpar
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista apenas com os pares da lista original
+
+Menor
+pré-condição: lista ser válida e não estar vazia
+entrada: endereço da lista, endereço para o retorno do menor elemento
+processo: procura e devolve o primeiro elemento da lista (que é o menor)
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
+
+ObtemValorElemento
+pré-condição: a lista ser válida e não estar vazia
+entrada: endereço da lista, posição do elemento, endereço para devolução do elemento na posição desejada
+processo: vai até a posição desejada e traz o elemento naquela posição (caso exista)
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
+
+Tamanho
+pré-condição: endereço da lista ser válido
+entrada: endereço da lista, endereço para o valor do tamanho
+processo: retorna o fim (que é igual ao número de elementos)
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
+
+Concatena
+pré-condição: o valor das listas somadas não ser maior que o tamanho máximo permitido
+entrada: tres endereços de lista
+processo: cria uma nova lista, passando para ela inicialmente os elementos da primeira lista, depois os da lista seguinte
+saída: 1 - sucesso, 0 - falha
+pós-condição: 3a lista criada com os elementos das duas outras listas
+
+ImprimeLista
+pré-condição: nenhuma
+entrada: endereço da lista a ser imprimida
+processo: imprime os elementos da lista
+saída: os elementos da lista
+pós-condição: nenhuma
+
+LiberaLista
+pré-condição: nenhuma
+entrada: endereço do endereço da lista a ser removida
+processo: libera o espaço alocado inicialmente
+saída: nenhuma
+pós-condição: espaço da memória liberado

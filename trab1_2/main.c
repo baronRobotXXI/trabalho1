@@ -5,21 +5,28 @@
 int main()
 {
     Lista* lista;
-
+    Lista* lista2;
+    Lista* lista3;
     int opcao;
     int verif;
     int pos;
     int elemento;
 
+    lista = NULL;
+    lista2 = NULL;
+    lista3 = NULL;
+
     printf("Querido usuario, digite a opcao desejada:\n");
     printf("1 - Inicializar Lista\n2 - Verifica Lista Vazia\n3 - Verifica Lista Cheia\n4 - Inserir Elemento\n5 - Remover Elemento\n");
-    printf("6 - Consulta elemento\n7 - Imprimir Lista\n8 - Liberar Lista\n");
+    printf("6 - Remove Impares\n7 - Menor elemento da lista\n8 - Tamanho da Lista\n9 - Concatena Listas\n");
+    printf("10 - Consulta elemento\n11 - Imprimir Lista\n12 - Liberar Lista\n");
     scanf("%d", &opcao);
 
-    while (opcao < 1 || opcao > 8){
+    while (opcao < 1 || opcao > 13){
         printf("OPCAO INVALIDA!! Digite novamente a opcao:\n");
         printf("1 - Inicializar Lista\n2 - Verifica Lista Vazia\n3 - Verifica Lista Cheia\n4 - Inserir Elemento\n5 - Remover Elemento\n");
-        printf("6 - Consulta elemento\n7 - Imprimir Lista\n8 - Liberar Lista\n");
+        printf("6 - Remove Impares\n7 - Menor elemento da lista\n8 - Tamanho da Lista\n9 - Concatena Listas\n");
+        printf("10 - Consulta elemento\n11 - Imprimir Lista\n12 - Liberar Lista\n");
         scanf("%d", &opcao);
     }
 
@@ -69,6 +76,45 @@ int main()
             break;
 
         case 6:
+            verif = RemoveImpares(lista);
+
+            printf("A lista sem os impares eh: \n");
+            ImprimeLista(lista);
+
+            break;
+
+        case 7:
+            verif = Menor(lista, &elemento);
+            printf("O menor elemento da lista eh: %d\n", elemento);
+
+            break;
+
+        case 8:
+            verif = Tamanho(lista, &elemento);
+
+            printf("O tamanho da lista eh: %d\n", elemento);
+            break;
+
+        case 9:
+            lista2 = CriaLista();
+            lista3 = CriaLista();
+
+            printf("Digite os elementos da nova lista:\n");
+            do{
+                scanf("%d", &elemento);
+
+                printf("Continuar insercao?\n0 - nao 1 - sim\n");
+                scanf("%d", &opcao);
+            }while (opcao != 0);
+
+            verif = Concatena(lista, lista2, lista3);
+
+            printf("A lista concatenada sera:\n");
+            ImprimeLista(lista3);
+
+            break;
+
+        case 10:
             printf("Digite a posicao do elemento a consultar:\n");
             scanf("%d", &pos);
 
@@ -80,25 +126,29 @@ int main()
                 printf("Nao foi possivel encontrar o elemento!\n");
             break;
 
-        case 7:
+        case 11:
             ImprimeLista(lista);
             break;
 
-        case 8:
-            LiberaLista(&lista);
+        case 12:
+            LiberaLista(lista);
+            LiberaLista(lista2);
+            LiberaLista(lista3);
             break;
 
         }
 
         printf("Querido usuario, digite a opcao desejada:\n");
         printf("0 - Encerrar Programa\n1 - Inicializar Lista\n2 - Verifica Lista Vazia\n3 - Verifica Lista Cheia\n4 - Inserir Elemento\n5 - Remover Elemento\n");
-        printf("6 - Consulta elemento\n7 - Imprimir Lista\n8 - Liberar Lista\n");
+        printf("6 - Remove Impares\n7 - Menor elemento da lista\n8 - Tamanho da Lista\n9 - Concatena Listas\n");
+        printf("10 - Consulta elemento\n11 - Imprimir Lista\n12 - Liberar Lista\n");
         scanf("%d", &opcao);
 
-        while (opcao < 0 || opcao > 8){
+        while (opcao < 0 || opcao > 13){
             printf("OPCAO INVALIDA!! Digite novamente a opcao:\n");
             printf("0 - Encerrar Programa\n1 - Inicializar Lista\n2 - Verifica Lista Vazia\n3 - Verifica Lista Cheia\n4 - Inserir Elemento\n5 - Remover Elemento\n");
-            printf("6 - Consulta elemento\n7 - Imprimir Lista\n8 - Liberar Lista\n");
+            printf("6 - Remove Impares\n7 - Menor elemento da lista\n8 - Tamanho da Lista\n9 - Concatena Listas\n");
+            printf("10 - Consulta elemento\n11 - Imprimir Lista\n12 - Liberar Lista\n");
             scanf("%d", &opcao);
         }
 
