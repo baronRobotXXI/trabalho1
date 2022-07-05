@@ -1,62 +1,111 @@
 CriaLista
-pr�-condi��o: nenhuma
+pré-condição: nenhuma
 entrada: nenhum
 processo: seta a lista como vazia
-sa�da: nenhuma
-p�s-condi��o: lista criada e vazia
+saída: nenhuma
+pós-condição: lista criada e vazia
 
 ListaVazia
-pr�-condi��o: nenhuma
-entrada: endere�o da lista
-processo: checa se h� elementos na lista
-sa�da: 1 - sucesso, 0 - falha
-p�s-condi��o: nenhuma
+pré-condição: nenhuma
+entrada: endereço da lista
+processo: checa se há elementos na lista
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
+
+InsereElemento
+pré-condição: novo nó ser alocado com sucesso
+entrada: endereço do endereço da lista, elemento a ser inserido
+processo: aloca um novo nó, passa o elemento para esse nó e o insere no início da lista
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista com um elemento a mais
 
 InsereOrdenado
-pr�-condi��o: endere�o da lista ser v�lido e elemento ser alocado com sucesso
-entrada: endere�o da lista, elemento a ser inserido
+pré-condição: novo nó ser alocado com sucesso
+entrada: endereço do endereço da lista, elemento a ser inserido
 processo: insere o elemento na lista de forma ordenada
-sa�da: 1 - sucesso, 0 - falha
-p�s-condi��o: lista com um elemento a mais
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista com um elemento a mais
+
+RemoveOrdenado
+pré-condição: endereço da lista ser válido e elemento ser maior que o primeiro
+entrada: endereço do endereço da lista, elemento a ser removido
+processo: remove o elemento da lista e reordena os elementos restantes
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista com um elemento a menos
+
+ObtemValorElemento
+pré-condição: a lista ter elementos e a posição desejada ser menor ou igual o tamanho total da lista
+entrada: endereço da lista, posição a consultar, endereço para devolução do elemento consultado
+processo: percorre a lista até a posição desejada e devolve o elemento (caso haja)
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
 
 TamanhoLista
-pr�-condi��o: endere�o da lista ser v�lido
-entrada: endere�o da lista
+pré-condição: lista não estar vazia
+entrada: endereço da lista, endereço para devolução do tamanho
 processo: computa o numero de elementos da lista
-sa�da: o numero de elementos da lista
-p�s-condi��o: nenhuma
+saída: o numero de elementos da lista
+pós-condição: nenhuma
 
-M�dia
-pr�-condi��o: nenhuma
-entrada: endere�o da lista
-processo: calcula a m�dia dos elementos da lista
-sa�da: a m�dia calculada
-p�s-condi��o: nenhuma
+Média
+pré-condição: lista não estar vazia
+entrada: endereço da lista, endereço para devolução da média
+processo: calcula a média dos elementos da lista
+saída: a média calculada
+pós-condição: nenhuma
 
-Iguais
-pr�-condi��o: duas listas v�lidas
-entrada: dois endere�os de lista
+xor
+pré-condição: nenhuma
+entrada: dois inteiros
+processo: realiza a comparação entre os valores
+saída: devolve 0 - 1 de acordo com a operação XOR
+pós-condição: nenhuma
+
+ListasIguais
+pré-condição: nenhuma (se uma das duas duas listas for vazia enquanto a outra não, erro)
+entrada: dois endereços de lista
 processo: compara as listas elemento a elemento
-sa�da: 1 - iguais, 0 - diferentes
-p�s-condi��o: nenhuma
+saída: 1 - iguais, 0 - diferentes
+pós-condição: nenhuma
 
-Intercalar
-pr�-condi��o: duas listas v�lidas
-entrada: tres endere�os de lista
+IntercalaListas
+pré-condição: duas listas válidas
+entrada: dois endereços de lista, um endereço de endereço de lista
 processo: intercala de forma ordenada as duas listas passadas como parametro dentro da 3a
-sa�da: 1 - sucesso, 0 - falha
-p�s-condi��o: 3a lista criada com os elementos intercalados
+saída: nenhuma
+pós-condição: 3a lista criada com os elementos intercalados
 
-Inverter
-pr�-condi��o: lista v�lida
-entrada: uma lista a ser invertida e outra vazia para ser preenchida com os invertidos
-processo: insere os elementos de uma lista em outra que esteja vazia
-sa�da: 1 - sucesso, 0 - falha
-p�s-condi��o: lista criada com os elementos da outra na ordem inversa
+InverteLista
+pré-condição: lista não estar vazia
+entrada: endereço da lista a ser invertida e endereço do endereço da lista a ser preenchida com os invertidos
+processo: insere os elementos de uma lista em outra que esteja vazia na ordem contrária
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista criada com os elementos da outra na ordem inversa
  
-RetornaImpar
-pr�-condi��o: lista valida
-entrada: endere�o da lista a ser verificada e da vazia
-processo: verifica elemento a elemento se � impar ou n�o. Caso seja, insere na lista vazia
-sa�da: nenhuma
-p�s-condi��o: nova lista criada com os �mpares da anterior
+ApenasImpares
+pré-condição: lista não estar vazia
+entrada: endereço da lista a ser verificada e endereço do endereço da vazia
+processo: verifica elemento a elemento se é impar ou não. Caso seja, insere na lista vazia
+saída: nenhuma
+pós-condição: nova lista criada com os ímpares da anterior
+
+ImprimeLista
+pré-condição: nenhuma
+entrada: endereço da lista
+processo: imprime os elementos da lista informada
+saída: os elementos da lista
+pós-condição: nenhuma
+
+LiberaLista
+pré-condição: nenhuma
+entrada: endereço do endereço da lista
+processo: desocupa o espaço inicialmente ocupado pelo ponteiro inicial da lista
+saída: nenhuma
+pós-condição: lista desalocada
+
+EsvaziaLista
+pré-condição: nenhuma
+entrada: endereço do endereço da lista
+processo: percorre a lista nó a nó, desalocando o espaço na memória
+saída: nenhuma
+pós-condição: nós da lista desalocados
