@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1656530449 source:c:\users\yuri\documents\trab1_3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"int_ord_dyn.h"
+
+1657049647 c:\users\yuri\documents\trab1_3\int_ord_dyn.h
+
+1657049665 source:c:\users\yuri\documents\trab1_3\int_ord_dyn.c
+	<stdio.h>
+	<stdlib.h>
+	"int_ord_dyn.h"
+
