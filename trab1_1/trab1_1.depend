@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1656974627 source:c:\users\yuri\documents\trab1_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"int_est.h"
+
+1656682434 c:\users\yuri\documents\trab1_1\int_est.h
+
+1657041234 source:c:\users\yuri\documents\trab1_1\int_est.c
+	<stdio.h>
+	<stdlib.h>
+	"int_est.h"
+
