@@ -207,5 +207,9 @@ void ImprimeLista (Lista* lst){
 }
 
 void LiberaLista (Lista** lst){
+	
+	if (lst != NULL)
+		lst->fim = 0;
+	
     free(*lst);
 }
