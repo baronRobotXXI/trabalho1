@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1657580608 source:c:\users\yuri\documents\trab1_4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"int_ord_cab.h"
+
+1657578996 c:\users\yuri\documents\trab1_4\int_ord_cab.h
+
+1657578996 source:c:\users\yuri\documents\trab1_4\int_ord_cab.c
+	<stdio.h>
+	<stdlib.h>
+	"int_ord_cab.h"
+

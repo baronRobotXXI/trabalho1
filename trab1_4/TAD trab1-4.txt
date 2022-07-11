@@ -1,0 +1,111 @@
+CriaLista
+pré-condição: nenhuma
+entrada: nenhuma
+processo: cria o nó inicial e seta a lista como vazia
+saída: nenhuma
+pós-condição: lista criada e vazia
+
+ListaVazia
+pré-condição: nenhuma
+entrada: endereço da lista
+processo: checa se há outro nó na lista
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
+
+InsereElemento
+pré-condição: novo nó ser alocado com sucesso
+entrada: endereço da lista, elemento a ser inserido
+processo: aloca um novo nó, passa o elemento para esse nó e o insere no início da lista (pos 1)
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista com um elemento a mais
+
+InsereOrdenado
+pré-condição: novo nó ser alocado com sucesso
+entrada: endereço da lista, elemento a ser inserido
+processo: insere o elemento na lista de forma ordenada
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista com um elemento a mais
+
+RemoveOrdenado
+pré-condição: lista não estar vazia
+entrada: endereço da lista, elemento a ser removido
+processo: remove o elemento da lista e reordena os elementos restantes
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista com um elemento a menos
+
+ObtemValorElemento
+pré-condição: a posição desejada ser menor que o tamanho total da lista
+entrada: endereço da lista, posição a consultar, endereço para devolução do elemento consultado
+processo: percorre a lista até a posição desejada e devolve o elemento (caso haja)
+saída: 1 - sucesso, 0 - falha
+pós-condição: nenhuma
+
+Média
+pré-condição: lista não estar vazia
+entrada: endereço da lista, endereço para devolução da média
+processo: calcula a média dos elementos da lista
+saída: a média calculada
+pós-condição: nenhuma
+
+xor
+pré-condição: nenhuma
+entrada: dois inteiros
+processo: realiza a comparação entre os valores
+saída: devolve 0 - 1 de acordo com a operação XOR
+pós-condição: nenhuma
+
+ListasIguais
+pré-condição: nenhuma (se uma das duas duas listas for vazia enquanto a outra não, erro)
+entrada: dois endereços de lista
+processo: compara as listas elemento a elemento
+saída: 1 - iguais, 0 - diferentes
+pós-condição: nenhuma
+
+IntercalaListas
+pré-condição: nenhuma
+entrada: tres endereços de lista
+processo: intercala de forma ordenada as duas listas (passadas como parametro) dentro da 3a
+saída: nenhuma
+pós-condição: 3a lista criada com os elementos intercalados
+
+InverteLista
+pré-condição: lista não estar vazia
+entrada: endereço da lista a ser invertida e endereço do endereço da lista a ser preenchida com os invertidos
+processo: insere os elementos de uma lista em outra que esteja vazia na ordem contrária
+saída: 1 - sucesso, 0 - falha
+pós-condição: lista criada com os elementos da outra na ordem inversa
+ 
+ApenasImpares
+pré-condição: lista não estar vazia
+entrada: endereço da lista a ser verificada e endereço da vazia
+processo: verifica elemento a elemento se é impar ou não. Caso seja, insere na lista vazia
+saída: nenhuma
+pós-condição: nova lista criada com os ímpares da anterior
+
+TamanhoLista
+pré-condição: nenhuma
+entrada: endereço da lista
+processo: nenhum
+saída: retorna o campo do valor do nó cabeçalho (neste caso, o número de itens da lista)
+pós-condição: nenhuma
+
+ImprimeLista
+pré-condição: nenhuma
+entrada: endereço da lista
+processo: imprime os elementos da lista informada
+saída: os elementos da lista
+pós-condição: nenhuma
+
+LiberaLista
+pré-condição: nenhuma
+entrada: endereço do endereço da lista
+processo: desocupa o espaço inicialmente ocupado pelo ponteiro inicial da lista
+saída: nenhuma
+pós-condição: lista desalocada
+
+EsvaziaLista
+pré-condição: nenhuma
+entrada: endereço do endereço da lista
+processo: percorre a lista nó a nó, desalocando o espaço na memória
+saída: nenhuma
+pós-condição: nós da lista desalocados
