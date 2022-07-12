@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1657585647 source:c:\users\yuri\documents\trab1_5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"circular_nord.h"
+
+1657584457 c:\users\yuri\documents\trab1_5\circular_nord.h
+
+1657586406 source:c:\users\yuri\documents\trab1_5\circular_nord.c
+	<stdio.h>
+	<stdlib.h>
+	"circular_nord.h"
+
