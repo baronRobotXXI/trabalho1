@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1657578052 source:c:\users\yuri\documents\trab1_6\main.c
+	<stdio.h>
+	<stdlib.h>
+	"dupla.h"
+
+1657586914 c:\users\yuri\documents\trab1_6\dupla.h
+
+1657586984 source:c:\users\yuri\documents\trab1_6\dupla.c
+	<stdio.h>
+	<stdlib.h>
+	"dupla.h"
+

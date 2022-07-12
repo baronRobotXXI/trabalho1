@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1657554537 source:c:\users\yuri\documents\trab1_7\main.c
+	<stdio.h>
+	<stdlib.h>
+	"soldados.h"
+
+1657499720 c:\users\yuri\documents\trab1_7\soldados.h
+
+1657553108 source:c:\users\yuri\documents\trab1_7\soldados.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<time.h>
+	"Soldados.h"
+

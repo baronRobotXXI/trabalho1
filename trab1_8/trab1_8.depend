@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1657564596 source:c:\users\yuri\documents\trab1_8\main.c
+	<stdio.h>
+	<stdlib.h>
+	"polinomio.h"
+
+1657405593 c:\users\yuri\documents\trab1_8\polinomio.h
+
+1657405593 source:c:\users\yuri\documents\trab1_8\polinomio.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"polinomio.h"
+
